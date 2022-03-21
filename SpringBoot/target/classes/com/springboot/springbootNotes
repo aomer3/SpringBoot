@@ -1,0 +1,32 @@
+Spring Boot
+1. Problems faced when developing with Spring
+	a. cumbersome to write out XML or annotated configurations when using Spring
+           and its modules
+	b. have to add in dependencies for the modules to work (i.e. Spring MVC, 
+           Spring ORM, Spring Data JPA, etc.) 
+	c. have to make sure the version of each of the Spring modules are all 
+           compatible with each other 
+	d. must deploy the application to an external web container to test it
+2. Spring Boot comes in to solve all of these issues with using Spring
+
+
+4 Key Features of Spring Boot (and how they solve traditional issues with Spring)
+1. Auto configuration - Spring Boot configures everything instead of the developer
+   having to do it manually (don't have to use XML, annotation-based of Java    
+   configs anymore)
+2. Spring Boot Starters - solves Spring issues of module availability and version 
+   compatibility 
+	a. different starter like spring-boot-starter-parent or spring-boot-starter-web 
+	or spring-boot-starter-data-jpa automatically bring in needed libraries and 
+	dependencies 
+3. Spring Boot has an embedded servlet container (Tomcat, by default) - We don't
+   have to worry about deploying our application to an external web container 
+4. Spring Boot Actuators - with Spring, we had to write the code for all of these 
+   functionalities, but now Spring Boot does it for us 
+	a. autoconfig - shows what configurations were automatically done by Spring
+	b. mappings - shows the http request mappings for our applicaiton
+	c. info - shows info about our application
+	d. health - shows application health conditions (i.e. is the database down)
+	e. metrics - shows different metrics collected from the application from 
+	   different points in time
+	   
